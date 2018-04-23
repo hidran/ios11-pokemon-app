@@ -16,6 +16,7 @@
 		9845F9191FAD46E9008BEA53 /* CompletedTodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9845F9181FAD46E9008BEA53 /* CompletedTodoListController.swift */; };
 		9845F91B1FAD5824008BEA53 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9845F91A1FAD5824008BEA53 /* SaveViewController.swift */; };
 		987F61711F93EDF1004F3136 /* FbTodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987F61701F93EDF1004F3136 /* FbTodoListController.swift */; };
+		98F84939208DBDBB00D4E8AD /* SignUpCtrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F84938208DBDBB00D4E8AD /* SignUpCtrlViewController.swift */; };
 		98FBDB491F8ECC3200F356FC /* TodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDB481F8ECC3200F356FC /* TodoListController.swift */; };
 		98FBDB4B1F8ECE7400F356FC /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDB4A1F8ECE7400F356FC /* TodoItem.swift */; };
 		D4207981DB838536CC3A2975 /* Pods_testfirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A87D3C5230A0C32E09E437D /* Pods_testfirebase.framework */; };
@@ -36,6 +37,7 @@
 		9845F9181FAD46E9008BEA53 /* CompletedTodoListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedTodoListController.swift; sourceTree = "<group>"; };
 		9845F91A1FAD5824008BEA53 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		987F61701F93EDF1004F3136 /* FbTodoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbTodoListController.swift; sourceTree = "<group>"; };
+		98F84938208DBDBB00D4E8AD /* SignUpCtrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCtrlViewController.swift; sourceTree = "<group>"; };
 		98FBDB481F8ECC3200F356FC /* TodoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListController.swift; sourceTree = "<group>"; };
 		98FBDB4A1F8ECE7400F356FC /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 		980C43101F77B43600090060 /* testfirebase */ = {
 			isa = PBXGroup;
 			children = (
+				98F84938208DBDBB00D4E8AD /* SignUpCtrlViewController.swift */,
 				980C43231F77B89200090060 /* GoogleService-Info.plist */,
 				980C43111F77B43600090060 /* AppDelegate.swift */,
 				980C43131F77B43600090060 /* ViewController.swift */,
@@ -243,6 +246,7 @@
 				98FBDB491F8ECC3200F356FC /* TodoListController.swift in Sources */,
 				980C43141F77B43600090060 /* ViewController.swift in Sources */,
 				98FBDB4B1F8ECE7400F356FC /* TodoItem.swift in Sources */,
+				98F84939208DBDBB00D4E8AD /* SignUpCtrlViewController.swift in Sources */,
 				980C43121F77B43600090060 /* AppDelegate.swift in Sources */,
 				987F61711F93EDF1004F3136 /* FbTodoListController.swift in Sources */,
 				9845F9191FAD46E9008BEA53 /* CompletedTodoListController.swift in Sources */,
