@@ -29,7 +29,7 @@ class FbTodoListController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginAnonym()
+       
         todoListRef.queryOrdered(byChild: "completed") .queryEqual(toValue: false).observe(.value) { (snapshot) in
             self.todoListItems = []
             for item in snapshot.children {

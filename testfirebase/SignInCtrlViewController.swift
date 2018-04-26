@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-class SignUpCtrlViewController: UIViewController {
+class SignInCtrlViewController: UIViewController {
 
     @IBOutlet weak var emailfld: UITextField!
     @IBOutlet weak var passwordfld: UITextField!
@@ -31,12 +31,13 @@ class SignUpCtrlViewController: UIViewController {
             else {
                 return
             }
-        Auth.auth().createUser(withEmail: email, password: password) {
+        Auth.auth().signIn(withEmail: email, password: password) {
             (user, err) in
             if err != nil {
                 print(err!.localizedDescription)
             } else {
-                //print(user?.email )goToDoList
+                print(user?.email )
+                self.performSegue(withIdentifier: "goToTodoList", sender: nil)
                 
             }
         }
