@@ -34,9 +34,13 @@ class SignUpCtrlViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) {
             (user, err) in
             if err != nil {
+                
+               let alert = UIAlertController(title: "Error", message: err!.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 print(err!.localizedDescription)
             } else {
-                //print(user?.email )goToDoList
+                self.performSegue(withIdentifier: "goToDoList", sender: nil)
                 
             }
         }

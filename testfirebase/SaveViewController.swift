@@ -11,7 +11,7 @@ import Firebase
 class SaveViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var quantity: UITextField!
-   let todoListRef:DatabaseReference = Database.database().reference().child("todolist")
+   let todoListRef:DatabaseReference = Database.database().reference().child("todolist").child(Auth.auth().currentUser?.uid ?? "me")
     override func viewDidLoad() {
         super.viewDidLoad()
         

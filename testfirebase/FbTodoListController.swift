@@ -13,23 +13,13 @@ class FbTodoListController: UITableViewController {
     
     var todoListItems:[TodoItem] = []
     
-    let todoListRef:DatabaseReference = Database.database().reference().child("todolist")
-    func loginAnonym(){
-        Auth.auth().signInAnonymously { (User, Error) in
-            if let error = Error {
-                print(error)
-            } else {
-                if let user = User {
-                    print("userid\(user.uid)")
-                } else {
-                    print("no")
-                }
-            }
-        }
-    }
+    let todoListRef:DatabaseReference = Database.database().reference().child("todolist").child(Auth.auth().currentUser?.uid ?? "me")
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       // let uid: String = Auth.auth().currentUser?.uid ?? "me"
+      // let userDb = todoListRef.child(uid)
         todoListRef.queryOrdered(byChild: "completed") .queryEqual(toValue: false).observe(.value) { (snapshot) in
             self.todoListItems = []
             for item in snapshot.children {
